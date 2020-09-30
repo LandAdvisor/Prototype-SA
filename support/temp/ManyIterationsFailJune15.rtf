@@ -1,0 +1,1031 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fswiss\fcharset0 Arial;}}
+{\colortbl ;\red64\green64\blue64;\red0\green0\blue0;\red215\green0\blue25;\red8\green247\blue86;}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\li150\cf1\f0\fs20 Executing: 4.FullModel 0.6 0.3 0.1 0.5 0.5 0.667 0.333 0.8 0.2 0 0 0.7 0.2 0.1 0.5 0.5 0.5 0.5 0.7 0.2 0.1 0.5 0.5 1 0.74 .15 1 20 37000000 50000 5 true true 0.7 20000000 2 2\par
+\cf2 Start Time: Fri Jun 15 14:47:21 2012\par
+\pard\li300\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 14:47:46 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 14:47:46 2012\par
+Succeeded at Fri Jun 15 14:47:47 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Calculate Field): CalculateField Sites_Populated_Layer mngmt_qlty 0 VB #\par
+\cf2 Start Time: Fri Jun 15 14:47:47 2012\par
+Succeeded at Fri Jun 15 14:47:49 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Select Layer By Attribute): SelectLayerByAttribute Sites_Populated_Layer NEW_SELECTION ""Genrl_Type" = 1"\par
+\cf2 Start Time: Fri Jun 15 14:47:49 2012\par
+Succeeded at Fri Jun 15 14:47:49 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Calculate Field (2)): CalculateField Sites_Populated_Layer mngmt_qlty 1 VB #\par
+\cf2 Start Time: Fri Jun 15 14:47:49 2012\par
+Succeeded at Fri Jun 15 14:47:49 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Select Layer By Attribute (2)): SelectLayerByAttribute Sites_Populated_Layer NEW_SELECTION ""Genrl_Type" =2"\par
+\cf2 Start Time: Fri Jun 15 14:47:49 2012\par
+Succeeded at Fri Jun 15 14:47:49 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Calculate Field (3)): CalculateField Sites_Populated_Layer mngmt_qlty 0.74 VB #\par
+\cf2 Start Time: Fri Jun 15 14:47:49 2012\par
+Succeeded at Fri Jun 15 14:47:49 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Select Layer By Attribute (3)): SelectLayerByAttribute Sites_Populated_Layer NEW_SELECTION ""Genrl_Type" = 3"\par
+\cf2 Start Time: Fri Jun 15 14:47:49 2012\par
+Succeeded at Fri Jun 15 14:47:49 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Calculate Field (4)): CalculateField Sites_Populated_Layer mngmt_qlty .15 VB #\par
+\cf2 Start Time: Fri Jun 15 14:47:49 2012\par
+Succeeded at Fri Jun 15 14:47:50 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Select Layer By Attribute (4)): SelectLayerByAttribute Sites_Populated_Layer CLEAR_SELECTION #\par
+\cf2 Start Time: Fri Jun 15 14:47:50 2012\par
+Succeeded at Fri Jun 15 14:47:50 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Feature to Raster): FeatureToRaster Sites_Populated_Layer mngmt_qlty C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality 100\par
+\cf2 Start Time: Fri Jun 15 14:47:50 2012\par
+Succeeded at Fri Jun 15 14:47:52 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Copy Raster): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mwa_hab_gen # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:47:52 2012\par
+Succeeded at Fri Jun 15 14:47:54 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Delete): Delete Sites_Populated_Layer #\par
+\cf2 Start Time: Fri Jun 15 14:47:54 2012\par
+Succeeded at Fri Jun 15 14:47:54 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 14:47:54 2012 (Elapsed Time: 8.00 seconds)\par
+\cf1 Executing (4021-Synthesis of Habitats at all 3 scales): 402-Habitats-Cond-MV-Synthesis2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\biome_cond_mv\par
+\cf2 Start Time: Fri Jun 15 14:47:54 2012\par
+\pard\li450\cf1 Executing (4012-Variant-Conditional-marginal-value): 4020-Variant-Conditional-marginal-value C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\variants_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\targets_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\varnt_cond_mv\par
+\cf2 Start Time: Fri Jun 15 14:48:01 2012\par
+\pard\li600\cf1 Executing (4010-Make-VARIANTS-into-Hab-generic): 4010-Make-VARIANTS-into-Hab-generic C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\variants_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\targets_g\par
+\cf2 Start Time: Fri Jun 15 14:48:04 2012\par
+\pard\li750\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "zonalarea (variants_g)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\variants_g\par
+\cf2 Start Time: Fri Jun 15 14:48:04 2012\par
+Succeeded at Fri Jun 15 14:48:05 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Copy Raster): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\variants_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_bndry # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:48:05 2012\par
+Succeeded at Fri Jun 15 14:48:07 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\targets_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_targets # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:48:07 2012\par
+Succeeded at Fri Jun 15 14:48:08 2012 (Elapsed Time: 1.00 seconds)\par
+\pard\li600 Succeeded at Fri Jun 15 14:48:08 2012 (Elapsed Time: 4.00 seconds)\par
+\cf1 Executing (4002-estimated-habitat-value (2)): 4002-estimated-habitat-value2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_cond_mv\par
+\cf2 Start Time: Fri Jun 15 14:48:08 2012\par
+\pard\li750\cf1 Executing (Single Output Map Algebra (4)): SingleOutputMapAlgebra "zonalsum (gen_hab_bndry, ((mwa_hab_gen + cwa_hab_gen) * m) div 2)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcmwa_per_hab C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_bndry;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mwa_hab_gen;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cwa_hab_gen;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\m\par
+\cf2 Start Time: Fri Jun 15 14:48:10 2012\par
+Succeeded at Fri Jun 15 14:48:13 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "tcmwa_per_hab div gen_hab_area" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\p C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcmwa_per_hab;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area\par
+\cf2 Start Time: Fri Jun 15 14:48:13 2012\par
+Succeeded at Fri Jun 15 14:48:14 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (8)): SingleOutputMapAlgebra "zonalsum (gen_hab_bndry, cwa_hab_gen * m)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcwa_per_hab C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_bndry;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cwa_hab_gen;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\m\par
+\cf2 Start Time: Fri Jun 15 14:48:14 2012\par
+Succeeded at Fri Jun 15 14:48:19 2012 (Elapsed Time: 5.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (11)): SingleOutputMapAlgebra "tcwa_per_hab div gen_hab_area" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcwa_per_hab;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area\par
+\cf2 Start Time: Fri Jun 15 14:48:19 2012\par
+Succeeded at Fri Jun 15 14:48:20 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (5)): SingleOutputMapAlgebra "(1 - s) * (1 - r) + s" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\s;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r\par
+\cf2 Start Time: Fri Jun 15 14:48:20 2012\par
+Succeeded at Fri Jun 15 14:48:22 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Times (2)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_targets 0.01 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\t\par
+\cf2 Start Time: Fri Jun 15 14:48:22 2012\par
+Succeeded at Fri Jun 15 14:48:23 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q100 0.01 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q\par
+\cf2 Start Time: Fri Jun 15 14:48:23 2012\par
+Succeeded at Fri Jun 15 14:48:24 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (6)): SingleOutputMapAlgebra "a - t * tan (3.14 div 2 - Atan ((1 - q + f - r) div a))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\i C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\t;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\f;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q\par
+\cf2 Start Time: Fri Jun 15 14:48:24 2012\par
+Succeeded at Fri Jun 15 14:48:26 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (7)): SingleOutputMapAlgebra "i + ((a - i) * o)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\v C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\i;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\o\par
+\cf2 Start Time: Fri Jun 15 14:48:26 2012\par
+Succeeded at Fri Jun 15 14:48:28 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Synthesis Formula Revised): SingleOutputMapAlgebra "con (t < q, con (p < q, a, u * v - (p - q) * tan(3.14 div 2 - Atan((1 - q + f - r) div (v * u)))), con (p < q, a, con (p < t,a - (p - q) * tan (3.14 div 2 - Atan ((t - q) div (a - v))),v * (1 - u) - (p - t) * tan (3.14 div 2 - Atan ((1 - t + f - r) div (v * (1 - u)))))))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\p;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\v;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\t;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\u;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\f\par
+\cf2 Start Time: Fri Jun 15 14:48:28 2012\par
+Succeeded at Fri Jun 15 14:48:33 2012 (Elapsed Time: 5.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (12)): SingleOutputMapAlgebra gen_hab_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_mv\par
+\cf2 Start Time: Fri Jun 15 14:48:33 2012\par
+Succeeded at Fri Jun 15 14:48:34 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (011-Normalize--input-is-raw): 011-Normalize--input-is-raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml\par
+\cf2 Start Time: Fri Jun 15 14:48:34 2012\par
+\pard\li900\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(raw - zonalmin ( region_is_0, raw)) div (zonalmax (region_is_0, raw) - zonalmin (region_is_0, raw))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_0\par
+\cf2 Start Time: Fri Jun 15 14:48:34 2012\par
+Succeeded at Fri Jun 15 14:48:40 2012 (Elapsed Time: 6.00 seconds)\par
+\pard\li750 Succeeded at Fri Jun 15 14:48:41 2012 (Elapsed Time: 7.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_cond_mv # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:48:41 2012\par
+Succeeded at Fri Jun 15 14:48:42 2012 (Elapsed Time: 1.00 seconds)\par
+\pard\li600 Succeeded at Fri Jun 15 14:48:43 2012 (Elapsed Time: 35.00 seconds)\par
+\cf1 Executing (4011-Make-generic-results-into-VARIANTS): 4012-Make-generic-results-into-VARIANTS C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\varnt_cond_mv\par
+\cf2 Start Time: Fri Jun 15 14:48:43 2012\par
+\pard\li750\cf1 Executing (Copy Raster): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_cond_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\varnt_cond_mv # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:48:43 2012\par
+Succeeded at Fri Jun 15 14:48:44 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\variant_mv # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:48:45 2012\par
+Succeeded at Fri Jun 15 14:48:47 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li600 Succeeded at Fri Jun 15 14:48:47 2012 (Elapsed Time: 4.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 14:48:47 2012 (Elapsed Time: 46.00 seconds)\par
+\cf1 Executing (4016-Book-Habitat-Conditional-Marginal-Value (2)): 4021-Book-Habitat-Conditional-Marginal-Value2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\bhab_cond_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\habitats_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\targets_g\par
+\cf2 Start Time: Fri Jun 15 14:48:47 2012\par
+\pard\li600\cf1 Executing (4014-Make-BOOK-HABITATS-n-is-20-into-Hab-generic (2) (2)): 4030-Make-BOOK-HABITATS-n-is-20-into-Hab-generic22 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\habitats_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\targets_g\par
+\cf2 Start Time: Fri Jun 15 14:48:49 2012\par
+\pard\li750\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "zonalarea (habitats_g)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\habitats_g\par
+\cf2 Start Time: Fri Jun 15 14:48:50 2012\par
+Succeeded at Fri Jun 15 14:48:51 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Copy Raster): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\habitats_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_bndry # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:48:51 2012\par
+Succeeded at Fri Jun 15 14:48:52 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (2)): SingleOutputMapAlgebra "zonalmean (habitats_g, Targets for Habitats)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_targets C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\targets_g;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\habitats_g\par
+\cf2 Start Time: Fri Jun 15 14:48:53 2012\par
+Succeeded at Fri Jun 15 14:48:54 2012 (Elapsed Time: 1.00 seconds)\par
+\pard\li600 Succeeded at Fri Jun 15 14:48:54 2012 (Elapsed Time: 5.00 seconds)\par
+\cf1 Executing (4002-estimated-habitat-value (2)): 4002-estimated-habitat-value2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_cond_mv\par
+\cf2 Start Time: Fri Jun 15 14:48:54 2012\par
+\pard\li750\cf1 Executing (Single Output Map Algebra (4)): SingleOutputMapAlgebra "zonalsum (gen_hab_bndry, ((mwa_hab_gen + cwa_hab_gen) * m) div 2)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcmwa_per_hab C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_bndry;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mwa_hab_gen;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cwa_hab_gen;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\m\par
+\cf2 Start Time: Fri Jun 15 14:48:56 2012\par
+Succeeded at Fri Jun 15 14:48:59 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "tcmwa_per_hab div gen_hab_area" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\p C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcmwa_per_hab;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area\par
+\cf2 Start Time: Fri Jun 15 14:48:59 2012\par
+Succeeded at Fri Jun 15 14:49:00 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (8)): SingleOutputMapAlgebra "zonalsum (gen_hab_bndry, cwa_hab_gen * m)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcwa_per_hab C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_bndry;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cwa_hab_gen;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\m\par
+\cf2 Start Time: Fri Jun 15 14:49:00 2012\par
+Succeeded at Fri Jun 15 14:49:03 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (11)): SingleOutputMapAlgebra "tcwa_per_hab div gen_hab_area" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcwa_per_hab;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area\par
+\cf2 Start Time: Fri Jun 15 14:49:03 2012\par
+Succeeded at Fri Jun 15 14:49:05 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (5)): SingleOutputMapAlgebra "(1 - s) * (1 - r) + s" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\s;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r\par
+\cf2 Start Time: Fri Jun 15 14:49:05 2012\par
+Succeeded at Fri Jun 15 14:49:06 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (2)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_targets 0.01 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\t\par
+\cf2 Start Time: Fri Jun 15 14:49:06 2012\par
+Succeeded at Fri Jun 15 14:49:07 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q100 0.01 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q\par
+\cf2 Start Time: Fri Jun 15 14:49:07 2012\par
+Succeeded at Fri Jun 15 14:49:10 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (6)): SingleOutputMapAlgebra "a - t * tan (3.14 div 2 - Atan ((1 - q + f - r) div a))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\i C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\t;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\f;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q\par
+\cf2 Start Time: Fri Jun 15 14:49:10 2012\par
+Succeeded at Fri Jun 15 14:49:12 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (7)): SingleOutputMapAlgebra "i + ((a - i) * o)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\v C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\i;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\o\par
+\cf2 Start Time: Fri Jun 15 14:49:12 2012\par
+Succeeded at Fri Jun 15 14:49:14 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Synthesis Formula Revised): SingleOutputMapAlgebra "con (t < q, con (p < q, a, u * v - (p - q) * tan(3.14 div 2 - Atan((1 - q + f - r) div (v * u)))), con (p < q, a, con (p < t,a - (p - q) * tan (3.14 div 2 - Atan ((t - q) div (a - v))),v * (1 - u) - (p - t) * tan (3.14 div 2 - Atan ((1 - t + f - r) div (v * (1 - u)))))))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\p;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\v;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\t;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\u;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\f\par
+\cf2 Start Time: Fri Jun 15 14:49:14 2012\par
+Succeeded at Fri Jun 15 14:49:19 2012 (Elapsed Time: 5.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (12)): SingleOutputMapAlgebra gen_hab_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_mv\par
+\cf2 Start Time: Fri Jun 15 14:49:19 2012\par
+Succeeded at Fri Jun 15 14:49:21 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (011-Normalize--input-is-raw): 011-Normalize--input-is-raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml\par
+\cf2 Start Time: Fri Jun 15 14:49:21 2012\par
+\pard\li900\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(raw - zonalmin ( region_is_0, raw)) div (zonalmax (region_is_0, raw) - zonalmin (region_is_0, raw))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_0\par
+\cf2 Start Time: Fri Jun 15 14:49:21 2012\par
+Succeeded at Fri Jun 15 14:49:26 2012 (Elapsed Time: 5.00 seconds)\par
+\pard\li750 Succeeded at Fri Jun 15 14:49:26 2012 (Elapsed Time: 5.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_cond_mv # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:49:26 2012\par
+Succeeded at Fri Jun 15 14:49:28 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li600 Succeeded at Fri Jun 15 14:49:28 2012 (Elapsed Time: 34.00 seconds)\par
+\cf1 Executing (4015-Make-generic-results-into-BOOKHAB (2) (2)): 4032-Make-generic-results-into-BOOKHAB22 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\bhab_cond_mv\par
+\cf2 Start Time: Fri Jun 15 14:49:28 2012\par
+\pard\li750\cf1 Executing (Copy Raster): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_cond_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\bhab_cond_mv # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:49:29 2012\par
+Succeeded at Fri Jun 15 14:49:30 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\bookhab_mv # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:49:30 2012\par
+Succeeded at Fri Jun 15 14:49:32 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li600 Succeeded at Fri Jun 15 14:49:32 2012 (Elapsed Time: 4.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 14:49:32 2012 (Elapsed Time: 45.00 seconds)\par
+\cf1 Executing (4019-Biome-Conditional-Marginal-Value): 4022-Biome-Conditional-Marginal-Value C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\biomes_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\targets_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\biome_cond_mv\par
+\cf2 Start Time: Fri Jun 15 14:49:32 2012\par
+\pard\li600\cf1 Executing (4017-Make-BIOMES-n-into-Hab-generic (2) (2)): 4020-Make-BIOMES-into-Hab-generic22 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\biomes_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\targets_g\par
+\cf2 Start Time: Fri Jun 15 14:49:35 2012\par
+\pard\li750\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "zonalarea (biomes_g)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\biomes_g\par
+\cf2 Start Time: Fri Jun 15 14:49:35 2012\par
+Succeeded at Fri Jun 15 14:49:36 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Copy Raster): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\biomes_g C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_bndry # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:49:36 2012\par
+Succeeded at Fri Jun 15 14:49:37 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (2)): SingleOutputMapAlgebra "zonalmean (biomes_g, targets_g)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_targets C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\targets_g;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\biomes_g\par
+\cf2 Start Time: Fri Jun 15 14:49:37 2012\par
+Succeeded at Fri Jun 15 14:49:39 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li600 Succeeded at Fri Jun 15 14:49:39 2012 (Elapsed Time: 4.00 seconds)\par
+\cf1 Executing (4002-estimated-habitat-value (2)): 4002-estimated-habitat-value2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_cond_mv\par
+\cf2 Start Time: Fri Jun 15 14:49:39 2012\par
+\pard\li750\cf1 Executing (Single Output Map Algebra (4)): SingleOutputMapAlgebra "zonalsum (gen_hab_bndry, ((mwa_hab_gen + cwa_hab_gen) * m) div 2)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcmwa_per_hab C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_bndry;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mwa_hab_gen;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cwa_hab_gen;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\m\par
+\cf2 Start Time: Fri Jun 15 14:49:40 2012\par
+Succeeded at Fri Jun 15 14:49:44 2012 (Elapsed Time: 4.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "tcmwa_per_hab div gen_hab_area" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\p C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcmwa_per_hab;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area\par
+\cf2 Start Time: Fri Jun 15 14:49:44 2012\par
+Succeeded at Fri Jun 15 14:49:45 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (8)): SingleOutputMapAlgebra "zonalsum (gen_hab_bndry, cwa_hab_gen * m)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcwa_per_hab C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_bndry;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cwa_hab_gen;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\m\par
+\cf2 Start Time: Fri Jun 15 14:49:45 2012\par
+Succeeded at Fri Jun 15 14:49:49 2012 (Elapsed Time: 4.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (11)): SingleOutputMapAlgebra "tcwa_per_hab div gen_hab_area" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\tcwa_per_hab;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_area\par
+\cf2 Start Time: Fri Jun 15 14:49:49 2012\par
+Succeeded at Fri Jun 15 14:49:50 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (5)): SingleOutputMapAlgebra "(1 - s) * (1 - r) + s" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\s;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r\par
+\cf2 Start Time: Fri Jun 15 14:49:50 2012\par
+Succeeded at Fri Jun 15 14:49:52 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Times (2)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_targets 0.01 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\t\par
+\cf2 Start Time: Fri Jun 15 14:49:52 2012\par
+Succeeded at Fri Jun 15 14:49:53 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q100 0.01 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q\par
+\cf2 Start Time: Fri Jun 15 14:49:53 2012\par
+Succeeded at Fri Jun 15 14:49:54 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (6)): SingleOutputMapAlgebra "a - t * tan (3.14 div 2 - Atan ((1 - q + f - r) div a))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\i C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\t;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\f;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q\par
+\cf2 Start Time: Fri Jun 15 14:49:54 2012\par
+Succeeded at Fri Jun 15 14:49:57 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (7)): SingleOutputMapAlgebra "i + ((a - i) * o)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\v C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\i;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\o\par
+\cf2 Start Time: Fri Jun 15 14:49:57 2012\par
+Succeeded at Fri Jun 15 14:49:58 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Synthesis Formula Revised): SingleOutputMapAlgebra "con (t < q, con (p < q, a, u * v - (p - q) * tan(3.14 div 2 - Atan((1 - q + f - r) div (v * u)))), con (p < q, a, con (p < t,a - (p - q) * tan (3.14 div 2 - Atan ((t - q) div (a - v))),v * (1 - u) - (p - t) * tan (3.14 div 2 - Atan ((1 - t + f - r) div (v * (1 - u)))))))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\p;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\v;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\a;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\r;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\t;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\q;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\u;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\f\par
+\cf2 Start Time: Fri Jun 15 14:49:58 2012\par
+Succeeded at Fri Jun 15 14:50:03 2012 (Elapsed Time: 5.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (12)): SingleOutputMapAlgebra gen_hab_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_mv\par
+\cf2 Start Time: Fri Jun 15 14:50:03 2012\par
+Succeeded at Fri Jun 15 14:50:05 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (011-Normalize--input-is-raw): 011-Normalize--input-is-raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml\par
+\cf2 Start Time: Fri Jun 15 14:50:05 2012\par
+\pard\li900\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(raw - zonalmin ( region_is_0, raw)) div (zonalmax (region_is_0, raw) - zonalmin (region_is_0, raw))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_0\par
+\cf2 Start Time: Fri Jun 15 14:50:06 2012\par
+Succeeded at Fri Jun 15 14:50:11 2012 (Elapsed Time: 5.00 seconds)\par
+\pard\li750 Succeeded at Fri Jun 15 14:50:11 2012 (Elapsed Time: 6.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_cond_mv # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:50:11 2012\par
+Succeeded at Fri Jun 15 14:50:13 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li600 Succeeded at Fri Jun 15 14:50:14 2012 (Elapsed Time: 35.00 seconds)\par
+\cf1 Executing (4018-Make-generic-results-into-BIOME (2)): 4022-Make-generic-results-into-BIOME2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\biome_cond_mv\par
+\cf2 Start Time: Fri Jun 15 14:50:14 2012\par
+\pard\li750\cf1 Executing (Copy Raster): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_cond_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\biome_cond_mv # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:50:14 2012\par
+Succeeded at Fri Jun 15 14:50:15 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\gen_hab_mv C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\biome_mv # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:50:16 2012\par
+Succeeded at Fri Jun 15 14:50:17 2012 (Elapsed Time: 1.00 seconds)\par
+\pard\li600 Succeeded at Fri Jun 15 14:50:17 2012 (Elapsed Time: 3.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 14:50:17 2012 (Elapsed Time: 45.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 14:50:18 2012 (Elapsed Time: 2 minutes 24 seconds)\par
+\cf1 Executing (4025-Combining habitats using weights): 4051-Combo--representation 0.6 0.3 0.1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\regnl_hab_rep\par
+\cf2 Start Time: Fri Jun 15 14:50:18 2012\par
+\pard\li450\cf1 Executing (Times (4)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.3 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W1A_Habitats\par
+\cf2 Start Time: Fri Jun 15 14:50:19 2012\par
+Succeeded at Fri Jun 15 14:50:20 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (3)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.6 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W1B_variant\par
+\cf2 Start Time: Fri Jun 15 14:50:20 2012\par
+Succeeded at Fri Jun 15 14:50:21 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (2)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\w1c_biomes\par
+\cf2 Start Time: Fri Jun 15 14:50:21 2012\par
+Succeeded at Fri Jun 15 14:50:23 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "bhab_cond_mv * w1a_habitats + varnt_cond_mv * w1b_variant + biome_cond_mv * w1c_biomes" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W1A_Habitats;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W1B_variant;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\biome_cond_mv;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\varnt_cond_mv;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\bhab_cond_mv;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\w1c_biomes\par
+\cf2 Start Time: Fri Jun 15 14:50:23 2012\par
+Succeeded at Fri Jun 15 14:50:25 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (011-Normalize--input-is-raw): 011-Normalize--input-is-raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml\par
+\cf2 Start Time: Fri Jun 15 14:50:25 2012\par
+\pard\li600\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(raw - zonalmin ( region_is_0, raw)) div (zonalmax (region_is_0, raw) - zonalmin (region_is_0, raw))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_0\par
+\cf2 Start Time: Fri Jun 15 14:50:26 2012\par
+Succeeded at Fri Jun 15 14:50:31 2012 (Elapsed Time: 5.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 14:50:31 2012 (Elapsed Time: 6.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\regnl_hab_rep # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:50:31 2012\par
+Succeeded at Fri Jun 15 14:50:32 2012 (Elapsed Time: 1.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 14:50:33 2012 (Elapsed Time: 15.00 seconds)\par
+\cf1 Executing (4027-Combining National habitats using weights (2)): 4051-Combo--representation2 0.5 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\natl_hab_rep\par
+\cf2 Start Time: Fri Jun 15 14:50:33 2012\par
+\pard\li450\cf1 Executing (Times (4)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2A_Prot\par
+\cf2 Start Time: Fri Jun 15 14:50:34 2012\par
+Succeeded at Fri Jun 15 14:50:35 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (3)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2B_Threat\par
+\cf2 Start Time: Fri Jun 15 14:50:35 2012\par
+Succeeded at Fri Jun 15 14:50:36 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "W2A_Prot * protweight + W2B_Threat * transweight" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2A_Prot;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2B_Threat;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\Inputs\\protweight;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\Inputs\\transweight\par
+\cf2 Start Time: Fri Jun 15 14:50:36 2012\par
+Succeeded at Fri Jun 15 14:50:38 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (011-Normalize--input-is-raw): 011-Normalize--input-is-raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml\par
+\cf2 Start Time: Fri Jun 15 14:50:38 2012\par
+\pard\li600\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(raw - zonalmin ( region_is_0, raw)) div (zonalmax (region_is_0, raw) - zonalmin (region_is_0, raw))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_0\par
+\cf2 Start Time: Fri Jun 15 14:50:38 2012\par
+Succeeded at Fri Jun 15 14:50:45 2012 (Elapsed Time: 7.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 14:50:45 2012 (Elapsed Time: 7.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\natl_hab_rep # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:50:45 2012\par
+Succeeded at Fri Jun 15 14:50:47 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 14:50:47 2012 (Elapsed Time: 14.00 seconds)\par
+\cf1 Executing (4029-Combining National and Regional using weights): 4051-Combo--representation22 0.333 0.667 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Hab_Value\par
+\cf2 Start Time: Fri Jun 15 14:50:47 2012\par
+\pard\li450\cf1 Executing (Times (4)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.667 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2A_Prot\par
+\cf2 Start Time: Fri Jun 15 14:50:48 2012\par
+Succeeded at Fri Jun 15 14:50:49 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (3)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.333 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2B_Threat\par
+\cf2 Start Time: Fri Jun 15 14:50:49 2012\par
+Succeeded at Fri Jun 15 14:50:51 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "W2A_Prot * regnl_hab_rep + W2B_Threat * natl_hab_rep" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2A_Prot;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2B_Threat;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\Outputs\\regnl_hab_rep;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\Outputs\\natl_hab_rep\par
+\cf2 Start Time: Fri Jun 15 14:50:51 2012\par
+Succeeded at Fri Jun 15 14:50:52 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (011-Normalize--input-is-raw): 011-Normalize--input-is-raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml\par
+\cf2 Start Time: Fri Jun 15 14:50:52 2012\par
+\pard\li600\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(raw - zonalmin ( region_is_0, raw)) div (zonalmax (region_is_0, raw) - zonalmin (region_is_0, raw))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_0\par
+\cf2 Start Time: Fri Jun 15 14:50:52 2012\par
+Succeeded at Fri Jun 15 14:50:59 2012 (Elapsed Time: 7.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 14:50:59 2012 (Elapsed Time: 7.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Hab_Value # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:50:59 2012\par
+Succeeded at Fri Jun 15 14:51:01 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 14:51:02 2012 (Elapsed Time: 15.00 seconds)\par
+\cf1 Executing (4081-Combining Representation Results): 4051-Combo--representation23 0.2 0.8 0 0 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\representn\par
+\cf2 Start Time: Fri Jun 15 14:51:02 2012\par
+\pard\li450\cf1 Executing (Times (4)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.8 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2A_Prot\par
+\cf2 Start Time: Fri Jun 15 14:51:03 2012\par
+Succeeded at Fri Jun 15 14:51:04 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (3)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2B_Threat\par
+\cf2 Start Time: Fri Jun 15 14:51:04 2012\par
+Succeeded at Fri Jun 15 14:51:05 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (2)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\other2\par
+\cf2 Start Time: Fri Jun 15 14:51:05 2012\par
+Succeeded at Fri Jun 15 14:51:06 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (5)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\other3\par
+\cf2 Start Time: Fri Jun 15 14:51:06 2012\par
+Succeeded at Fri Jun 15 14:51:07 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "W2A_Prot * hab_value + W2B_Threat * species_mv + other2 * otherin2 + other3 * otherin3" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2A_Prot;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2B_Threat;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\other2;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\other3;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\hab_value;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\species_mv;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\region_is_1;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\region_is_1\par
+\cf2 Start Time: Fri Jun 15 14:51:07 2012\par
+Succeeded at Fri Jun 15 14:51:09 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (011-Normalize--input-is-raw): 011-Normalize--input-is-raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml\par
+\cf2 Start Time: Fri Jun 15 14:51:09 2012\par
+\pard\li600\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(raw - zonalmin ( region_is_0, raw)) div (zonalmax (region_is_0, raw) - zonalmin (region_is_0, raw))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_0\par
+\cf2 Start Time: Fri Jun 15 14:51:09 2012\par
+Succeeded at Fri Jun 15 14:51:14 2012 (Elapsed Time: 5.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 14:51:14 2012 (Elapsed Time: 5.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\overlap_biod # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:51:14 2012\par
+Succeeded at Fri Jun 15 14:51:16 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (2)): SingleOutputMapAlgebra merge(overlap_biod, hab_valu) C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\representn C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\overlap_biod;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\hab_value\par
+\cf2 Start Time: Fri Jun 15 14:51:16 2012\par
+Succeeded at Fri Jun 15 14:51:19 2012 (Elapsed Time: 3.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 14:51:20 2012 (Elapsed Time: 18.00 seconds)\par
+\cf1 Executing (4085-Combining Representation with Naturalness): 4051-Combo--representation232 0.5 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\composition\par
+\cf2 Start Time: Fri Jun 15 14:51:20 2012\par
+\pard\li450\cf1 Executing (Times (4)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\w2a_prot\par
+\cf2 Start Time: Fri Jun 15 14:51:21 2012\par
+Succeeded at Fri Jun 15 14:51:22 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (3)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\w2b_threat\par
+\cf2 Start Time: Fri Jun 15 14:51:22 2012\par
+Succeeded at Fri Jun 15 14:51:23 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "W5A * representn + W5B * condition" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\w2a_prot;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\w2b_threat;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\condition;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\representn\par
+\cf2 Start Time: Fri Jun 15 14:51:23 2012\par
+Succeeded at Fri Jun 15 14:51:25 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (011-Normalize--input-is-raw): 011-Normalize--input-is-raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml\par
+\cf2 Start Time: Fri Jun 15 14:51:25 2012\par
+\pard\li600\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(raw - zonalmin ( region_is_0, raw)) div (zonalmax (region_is_0, raw) - zonalmin (region_is_0, raw))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_0\par
+\cf2 Start Time: Fri Jun 15 14:51:25 2012\par
+Succeeded at Fri Jun 15 14:51:31 2012 (Elapsed Time: 6.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 14:51:31 2012 (Elapsed Time: 6.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\composition # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 14:51:31 2012\par
+Succeeded at Fri Jun 15 14:51:33 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 14:51:33 2012 (Elapsed Time: 13.00 seconds)\par
+\cf1 Executing (PrepforConnectivityScript): PrepforConnectivityScript C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\PROTECTED_AREAS_DISSOLVED.shp 0.7\par
+\cf2 Start Time: Fri Jun 15 14:51:33 2012\par
+\pard\li450\cf1 Executing (Con): Con C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality 1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cores # "Value > 0.7"\par
+\cf2 Start Time: Fri Jun 15 14:51:34 2012\par
+Succeeded at Fri Jun 15 14:51:35 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Raster to Polygon): RasterToPolygon C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cores C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\PROTECTED_AREAS_DISSOLVE_Prep.shp SIMPLIFY VALUE\par
+\cf2 Start Time: Fri Jun 15 14:51:35 2012\par
+Succeeded at Fri Jun 15 14:51:36 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Calculate Areas): CalculateAreas C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\PROTECTED_AREAS_DISSOLVE_Prep.shp C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\PROTECTED_AREAS_DISSOLVED.shp\par
+\cf2 Start Time: Fri Jun 15 14:51:36 2012\par
+Running script CalculateAreas...\par
+Completed script CalculateAreas...\par
+Succeeded at Fri Jun 15 14:51:41 2012 (Elapsed Time: 5.00 seconds)\par
+\cf1 Executing (Add Field): AddField C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\PROTECTED_AREAS_DISSOLVED.shp Shape_Area FLOAT # # # # NON_NULLABLE NON_REQUIRED #\par
+\cf2 Start Time: Fri Jun 15 14:51:42 2012\par
+Adding Shape_Area to C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\PROTECTED_AREAS_DISSOLVED.shp...\par
+Succeeded at Fri Jun 15 14:51:42 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Calculate Field): CalculateField C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\PROTECTED_AREAS_DISSOLVED.shp Shape_Area [F_AREA] VB #\par
+\cf2 Start Time: Fri Jun 15 14:51:42 2012\par
+Succeeded at Fri Jun 15 14:51:42 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Add Field (2)): AddField C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\PROTECTED_AREAS_DISSOLVED.shp OBJECTID_1 LONG # # # # NON_NULLABLE NON_REQUIRED #\par
+\cf2 Start Time: Fri Jun 15 14:51:42 2012\par
+Adding OBJECTID_1 to C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\PROTECTED_AREAS_DISSOLVED.shp...\par
+Succeeded at Fri Jun 15 14:51:42 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Calculate Field (2)): CalculateField C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\PROTECTED_AREAS_DISSOLVED.shp OBJECTID_1 [FID]+1 VB #\par
+\cf2 Start Time: Fri Jun 15 14:51:42 2012\par
+Succeeded at Fri Jun 15 14:51:42 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 14:51:42 2012 (Elapsed Time: 9.00 seconds)\par
+\cf1 Executing (Connectivity A (3)): ConnectivityA C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\composition C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\TRANSIT_ROADS_MOT.shp 20 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\streams.shp 1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\PROTECTED_AREAS_DISSOLVED.shp C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 37000000 50000 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Outputsgdb.gdb\\ProtectedAreaPairs true\par
+\cf2 Start Time: Fri Jun 15 14:51:42 2012\par
+Running script ConnectivityA...\par
+Started Generating Cost Surface at: Fri Jun 15 14:51:43 2012\par
+Finished Generating Cost Surface at: Fri Jun 15 14:51:58 2012\par
+Started Excluding Protected Areas at: Fri Jun 15 14:52:00 2012\par
+Finished Excluding Protected Areas at: Fri Jun 15 14:52:02 2012\par
+Started Converting Protected Areas at: Fri Jun 15 14:52:02 2012\par
+Finished Converting Protected Areas at: Fri Jun 15 14:52:05 2012\par
+Started Processing Protected Areas at: Fri Jun 15 14:52:05 2012\par
+Finished Processing Protected Areas at: Fri Jun 15 15:04:47 2012\par
+Started Processing Protected Area Pair Distance at: Fri Jun 15 15:04:47 2012\par
+Finished Processing Protected Area Pair Distance at: Fri Jun 15 15:04:54 2012\par
+Started Processing Pairs of Protected Areas at: Fri Jun 15 15:04:56 2012\par
+Finished Processing Pairs of Protected Areas at: Fri Jun 15 15:07:30 2012\par
+Completed script ConnectivityA...\par
+Succeeded at Fri Jun 15 15:07:31 2012 (Elapsed Time: 15 minutes 49 seconds)\par
+\cf1 Executing (Connectivity B (2)): ConnectivityB C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Outputsgdb.gdb\\ProtectedAreaPairs C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 5 0.7 0.2 0.1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\connectivity true\par
+\cf2 Start Time: Fri Jun 15 15:07:31 2012\par
+Running script ConnectivityB...\par
+Started Processing Pairs of Protected Areas (pass 1) at: Fri Jun 15 15:07:31 2012\par
+%scratchWorkspace%\\imp1-2: 48.0826187134 - 84.3557510376\par
+%scratchWorkspace%\\imp1-3: 54.27135849 - 115.773460388\par
+%scratchWorkspace%\\imp1-4: 50.0272369385 - 71.0492019653\par
+%scratchWorkspace%\\imp1-5: 53.3750495911 - 85.7597808838\par
+%scratchWorkspace%\\imp1-7: 55.9491462708 - 74.1219940186\par
+%scratchWorkspace%\\imp1-8: 60.7852935791 - 80.0092697144\par
+%scratchWorkspace%\\imp1-9: 51.0184364319 - 67.492980957\par
+%scratchWorkspace%\\imp1-10: 49.4654197693 - 59.0580558777\par
+%scratchWorkspace%\\imp1-11: 57.4499359131 - 70.3239822388\par
+%scratchWorkspace%\\imp1-12: 56.4532203674 - 68.0438308716\par
+%scratchWorkspace%\\imp1-14: 56.8652877808 - 68.0162582397\par
+%scratchWorkspace%\\imp2-6: 63.8935890198 - 191.017501831\par
+%scratchWorkspace%\\imp2-8: 66.6778411865 - 151.809158325\par
+%scratchWorkspace%\\imp2-11: 60.9241409302 - 82.339263916\par
+%scratchWorkspace%\\imp2-14: 61.0284385681 - 103.669013977\par
+%scratchWorkspace%\\imp3-4: 48.7002334595 - 81.712600708\par
+%scratchWorkspace%\\imp3-7: 52.7902107239 - 67.8386764526\par
+%scratchWorkspace%\\imp3-9: 49.9389915466 - 92.6617431641\par
+%scratchWorkspace%\\imp3-12: 61.8953056335 - 91.6700897217\par
+%scratchWorkspace%\\imp4-9: 43.8924865723 - 109.943435669\par
+%scratchWorkspace%\\imp5-7: 53.1263160706 - 112.249252319\par
+%scratchWorkspace%\\imp5-8: 54.0493736267 - 75.4743041992\par
+%scratchWorkspace%\\imp5-10: 48.9307098389 - 81.7535018921\par
+%scratchWorkspace%\\imp5-11: 63.1820487976 - 105.414070129\par
+%scratchWorkspace%\\imp5-12: 42.932510376 - 57.2303276062\par
+%scratchWorkspace%\\imp5-13: 55.1185722351 - 89.6583938599\par
+%scratchWorkspace%\\imp5-14: 57.699760437 - 82.3201751709\par
+%scratchWorkspace%\\imp6-8: 49.3228263855 - 83.992980957\par
+%scratchWorkspace%\\imp6-14: 79.6555709839 - 419.748565674\par
+%scratchWorkspace%\\imp7-10: 54.0823059082 - 147.874099731\par
+%scratchWorkspace%\\imp7-12: 53.3484191895 - 129.946884155\par
+%scratchWorkspace%\\imp7-13: 48.3619995117 - 66.3992767334\par
+%scratchWorkspace%\\imp8-11: 58.5824661255 - 106.463562012\par
+%scratchWorkspace%\\imp8-13: 44.2299728394 - 64.1241836548\par
+%scratchWorkspace%\\imp8-14: 48.3735733032 - 169.18421936\par
+%scratchWorkspace%\\imp10-12: 42.0229873657 - 197.928970337\par
+%scratchWorkspace%\\imp10-13: 43.3895111084 - 67.9792938232\par
+%scratchWorkspace%\\imp11-13: 48.1064338684 - 142.652099609\par
+%scratchWorkspace%\\imp11-14: 49.2092933655 - 225.975570679\par
+%scratchWorkspace%\\imp13-14: 37.6336593628 - 116.550735474\par
+Finished Processing Pairs of Protected Areas (pass 1) at: Fri Jun 15 15:19:35 2012\par
+Started Processing Pairs of Protected Areas (pass 2) at: Fri Jun 15 15:19:35 2012\par
+maxOverallImpermeability: 419.748565674\par
+minOverallImpermeability: 37.6336593628\par
+impermeabilityDifference: 382.114906311\par
+maxOverallLCPLength: 529\par
+minOverallLCPLength: 36\par
+lengthDifference: 493\par
+Finished Processing Pairs of Protected Areas (pass 2) at: Fri Jun 15 15:47:00 2012\par
+Started Calculating Overall Connectivity at: Fri Jun 15 15:47:00 2012\par
+Finished Calculating Overall Connectivity at: Fri Jun 15 15:47:30 2012\par
+Started Cleanup at: Fri Jun 15 15:47:30 2012\par
+Finished Cleanup at: Fri Jun 15 15:48:54 2012\par
+Completed script ConnectivityB...\par
+Succeeded at Fri Jun 15 15:48:54 2012 (Elapsed Time: 41 minutes 23 seconds)\par
+\cf1 Executing (4780-Combining contiguity measures): 4780-Combining-contiguity-measures 0.1 0.2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\core_adjacncy 0.7\par
+\cf2 Start Time: Fri Jun 15 15:48:54 2012\par
+\pard\li450\cf1 Executing (Times (4)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\WB\par
+\cf2 Start Time: Fri Jun 15 15:48:58 2012\par
+Succeeded at Fri Jun 15 15:48:59 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (3)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\WC\par
+\cf2 Start Time: Fri Jun 15 15:48:59 2012\par
+Succeeded at Fri Jun 15 15:49:00 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (2)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.7 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\WA\par
+\cf2 Start Time: Fri Jun 15 15:49:00 2012\par
+Succeeded at Fri Jun 15 15:49:02 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (4710-Mark all cadastres (parcels) adjacent to cores): 4705-Mark-all-cadastres-adjacent-to-cores2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\adjcnt_parcel\par
+\cf2 Start Time: Fri Jun 15 15:49:02 2012\par
+\pard\li600\cf1 Executing (Filter): Filter C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cores C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Filter_cores1 HIGH DATA\par
+\cf2 Start Time: Fri Jun 15 15:49:03 2012\par
+Succeeded at Fri Jun 15 15:49:04 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Con): Con C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Filter_cores1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cadastre100m C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Con_Filter_c1 # "value < -0.5"\par
+\cf2 Start Time: Fri Jun 15 15:49:04 2012\par
+Succeeded at Fri Jun 15 15:49:06 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra zonalmax(cadastre100m,Con_Filter_c1) C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput3 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Con_Filter_c1;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cadastre100m\par
+\cf2 Start Time: Fri Jun 15 15:49:06 2012\par
+Succeeded at Fri Jun 15 15:49:07 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Reclassify): Reclassify C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cores VALUE "1 0" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Reclass_core1 DATA\par
+\cf2 Start Time: Fri Jun 15 15:49:07 2012\par
+Succeeded at Fri Jun 15 15:49:09 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (2)): SingleOutputMapAlgebra merge(Reclass_core1,SingleOutput3)\par
+ C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput4 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput3;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Reclass_core1\par
+\cf2 Start Time: Fri Jun 15 15:49:09 2012\par
+Succeeded at Fri Jun 15 15:49:10 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Reclassify (2)): Reclassify C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput4 VALUE "0 1 0;1 1000000 1;NODATA 0" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\adjcnt_parcel DATA\par
+\cf2 Start Time: Fri Jun 15 15:49:10 2012\par
+Succeeded at Fri Jun 15 15:49:12 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 15:49:13 2012 (Elapsed Time: 11.00 seconds)\par
+\cf1 Executing (4705-Mark all properties adjacent to cores): 4705-Mark-all-properties-adjacent-to-cores C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\adjcnt_propty\par
+\cf2 Start Time: Fri Jun 15 15:49:13 2012\par
+\pard\li600\cf1 Executing (Filter): Filter C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cores C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Filter_cores1 HIGH DATA\par
+\cf2 Start Time: Fri Jun 15 15:49:14 2012\par
+Succeeded at Fri Jun 15 15:49:16 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Con): Con C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Filter_cores1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\sites_100m C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Con_Filter_c1 # "value < -0.5"\par
+\cf2 Start Time: Fri Jun 15 15:49:16 2012\par
+Succeeded at Fri Jun 15 15:49:17 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra zonalmax(sites_100m,Con_Filter_c1) C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Con_Filter_c1;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\sites_100m\par
+\cf2 Start Time: Fri Jun 15 15:49:17 2012\par
+Succeeded at Fri Jun 15 15:49:18 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Reclassify): Reclassify C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cores VALUE "1 0" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Reclass_core1 DATA\par
+\cf2 Start Time: Fri Jun 15 15:49:19 2012\par
+Succeeded at Fri Jun 15 15:49:21 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (2)): SingleOutputMapAlgebra merge(Reclass_core1,SingleOutput3)\par
+ C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput1;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Reclass_core1\par
+\cf2 Start Time: Fri Jun 15 15:49:21 2012\par
+Succeeded at Fri Jun 15 15:49:22 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Reclassify (2)): Reclassify C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput2 VALUE "0 1 0;1 1000000 1;NODATA 0" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\adjcnt_propty DATA\par
+\cf2 Start Time: Fri Jun 15 15:49:22 2012\par
+Succeeded at Fri Jun 15 15:49:23 2012 (Elapsed Time: 1.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 15:49:24 2012 (Elapsed Time: 11.00 seconds)\par
+\cf1 Executing (4715-Mark all watersheds adjacent to cores (2)): 4705-Mark-all-watersheds-adjacent-to-cores22 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\adjcnt_wtrshd\par
+\cf2 Start Time: Fri Jun 15 15:49:24 2012\par
+\pard\li600\cf1 Executing (Filter): Filter C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cores C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Filter_cores1 HIGH DATA\par
+\cf2 Start Time: Fri Jun 15 15:49:25 2012\par
+Succeeded at Fri Jun 15 15:49:27 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Con): Con C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Filter_cores1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\watershed100m C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Con_Filter_c1 # "value < -0.5"\par
+\cf2 Start Time: Fri Jun 15 15:49:27 2012\par
+Succeeded at Fri Jun 15 15:49:28 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra zonalmax(watershed100m,Con_Filter_c1) C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput3 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Con_Filter_c1;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\watershed100m\par
+\cf2 Start Time: Fri Jun 15 15:49:28 2012\par
+Succeeded at Fri Jun 15 15:49:29 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Reclassify): Reclassify C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cores VALUE "1 0" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Reclass_core1 DATA\par
+\cf2 Start Time: Fri Jun 15 15:49:29 2012\par
+Succeeded at Fri Jun 15 15:49:32 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (2)): SingleOutputMapAlgebra merge(Reclass_core1,SingleOutput3)\par
+ C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput4 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput3;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Reclass_core1\par
+\cf2 Start Time: Fri Jun 15 15:49:32 2012\par
+Succeeded at Fri Jun 15 15:49:33 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Reclassify (2)): Reclassify C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\SingleOutput4 VALUE "0 1 0;1 1000000 1;NODATA 0" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\adjcnt_wtrshd DATA\par
+\cf2 Start Time: Fri Jun 15 15:49:33 2012\par
+Succeeded at Fri Jun 15 15:49:35 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 15:49:35 2012 (Elapsed Time: 11.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(WB * adjcnt_parcel)  + (WC * adjcnt_wtrshd) + (WA * adjcnt_propty)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\WB;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\WC;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\adjcnt_parcel;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\adjcnt_wtrshd;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\adjcnt_propty;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\WA\par
+\cf2 Start Time: Fri Jun 15 15:49:35 2012\par
+Succeeded at Fri Jun 15 15:49:37 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (011-Normalize--input-is-raw): 011-Normalize--input-is-raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml\par
+\cf2 Start Time: Fri Jun 15 15:49:37 2012\par
+\pard\li600\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(raw - zonalmin ( region_is_0, raw)) div (zonalmax (region_is_0, raw) - zonalmin (region_is_0, raw))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_0\par
+\cf2 Start Time: Fri Jun 15 15:49:38 2012\par
+Succeeded at Fri Jun 15 15:49:43 2012 (Elapsed Time: 5.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 15:49:43 2012 (Elapsed Time: 6.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\core_adjacncy # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 15:49:43 2012\par
+Succeeded at Fri Jun 15 15:49:45 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 15:49:46 2012 (Elapsed Time: 52.00 seconds)\par
+\cf1 Executing (4901-Combining spatial context criteria): 4901-Combining-spatial-context-criteria 0.5 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\spatialcontxt\par
+\cf2 Start Time: Fri Jun 15 15:49:46 2012\par
+\pard\li450\cf1 Executing (Times (4)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2A_Prot\par
+\cf2 Start Time: Fri Jun 15 15:49:47 2012\par
+Succeeded at Fri Jun 15 15:49:48 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (3)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2B_Threat\par
+\cf2 Start Time: Fri Jun 15 15:49:48 2012\par
+Succeeded at Fri Jun 15 15:49:50 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "W7A * connectivity + W7B * contiguity" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2A_Prot;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\W2B_Threat;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\core_adjacncy;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\connectivity\par
+\cf2 Start Time: Fri Jun 15 15:49:50 2012\par
+Succeeded at Fri Jun 15 15:49:52 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (011-Normalize--input-is-raw): 011-Normalize--input-is-raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml\par
+\cf2 Start Time: Fri Jun 15 15:49:52 2012\par
+\pard\li600\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(raw - zonalmin ( region_is_0, raw)) div (zonalmax (region_is_0, raw) - zonalmin (region_is_0, raw))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_0\par
+\cf2 Start Time: Fri Jun 15 15:49:53 2012\par
+Succeeded at Fri Jun 15 15:49:59 2012 (Elapsed Time: 6.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 15:49:59 2012 (Elapsed Time: 7.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\spatialcontxt # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 15:49:59 2012\par
+Succeeded at Fri Jun 15 15:50:01 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 15:50:02 2012 (Elapsed Time: 16.00 seconds)\par
+\cf1 Executing (4955-Combining biodiversity criteria): 4955-Combining-biodiversity-criteria 0.5 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\biodiv_value\par
+\cf2 Start Time: Fri Jun 15 15:50:02 2012\par
+\pard\li450\cf1 Executing (Times (4)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\WA\par
+\cf2 Start Time: Fri Jun 15 15:50:02 2012\par
+Succeeded at Fri Jun 15 15:50:03 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Times (3)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 0.5 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\WB\par
+\cf2 Start Time: Fri Jun 15 15:50:03 2012\par
+Succeeded at Fri Jun 15 15:50:04 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "WA * composition + WB * spatialcontxt" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\WA;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\WB;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\spatialcontxt;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\composition\par
+\cf2 Start Time: Fri Jun 15 15:50:04 2012\par
+Succeeded at Fri Jun 15 15:50:06 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (011-Normalize--input-is-raw): 011-Normalize--input-is-raw C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml\par
+\cf2 Start Time: Fri Jun 15 15:50:06 2012\par
+\pard\li600\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "(raw - zonalmin ( region_is_0, raw)) div (zonalmax (region_is_0, raw) - zonalmin (region_is_0, raw))" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_0\par
+\cf2 Start Time: Fri Jun 15 15:50:07 2012\par
+Succeeded at Fri Jun 15 15:50:12 2012 (Elapsed Time: 5.00 seconds)\par
+\pard\li450 Succeeded at Fri Jun 15 15:50:12 2012 (Elapsed Time: 6.00 seconds)\par
+\cf1 Executing (Copy Raster (2)): CopyRaster C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\raw_nml C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\biodiv_value # # # NONE NONE #\par
+\cf2 Start Time: Fri Jun 15 15:50:12 2012\par
+Succeeded at Fri Jun 15 15:50:14 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 15:50:15 2012 (Elapsed Time: 13.00 seconds)\par
+\cf1 Executing (5085 combining current and predicted stewardship level with biodiversity (2)): Model12 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Bio_Benefit1\par
+\cf2 Start Time: Fri Jun 15 15:50:15 2012\par
+\pard\li450\cf1 Executing (Single Output Map Algebra (7)): SingleOutputMapAlgebra "Biodiv_Value * mgmt3efftvnss" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprop3 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\Inputs\\mgmt3efftvnss;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Biodiv_Value\par
+\cf2 Start Time: Fri Jun 15 15:50:17 2012\par
+Succeeded at Fri Jun 15 15:50:18 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (5)): SingleOutputMapAlgebra "Biodiv_Value * mwa_hab_gen" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprot1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mwa_hab_gen;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Biodiv_Value\par
+\cf2 Start Time: Fri Jun 15 15:50:18 2012\par
+Succeeded at Fri Jun 15 15:50:21 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Minus (6)): Minus C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprop3 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprot1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Bio_BeneRaw3\par
+\cf2 Start Time: Fri Jun 15 15:50:21 2012\par
+Succeeded at Fri Jun 15 15:50:22 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (8)): SingleOutputMapAlgebra "Biodiv_Value * mgmt4efftvnss" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprop4 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\Inputs\\mgmt4efftvnss;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Biodiv_Value\par
+\cf2 Start Time: Fri Jun 15 15:50:22 2012\par
+Succeeded at Fri Jun 15 15:50:24 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Minus (7)): Minus C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprop4 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprot1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Bio_BeneRaw4\par
+\cf2 Start Time: Fri Jun 15 15:50:24 2012\par
+Succeeded at Fri Jun 15 15:50:25 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (6)): SingleOutputMapAlgebra "Biodiv_Value * mgmt1efftvnss" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprop1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Biodiv_Value;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\Inputs\\mgmt1efftvnss\par
+\cf2 Start Time: Fri Jun 15 15:50:25 2012\par
+Succeeded at Fri Jun 15 15:50:27 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Minus): Minus C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprop1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprot1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Bio_BeneRaw1\par
+\cf2 Start Time: Fri Jun 15 15:50:27 2012\par
+Succeeded at Fri Jun 15 15:50:28 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Con): Con C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Bio_BeneRaw1 0 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Bio_Benefit1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Bio_BeneRaw1 "VALUE < 0"\par
+\cf2 Start Time: Fri Jun 15 15:50:28 2012\par
+Succeeded at Fri Jun 15 15:50:31 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "Biodiv_Value * mgmt2efftvnss" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprop2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\Inputs\\mgmt2efftvnss;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Biodiv_Value\par
+\cf2 Start Time: Fri Jun 15 15:50:31 2012\par
+Succeeded at Fri Jun 15 15:50:33 2012 (Elapsed Time: 2.00 seconds)\par
+\cf1 Executing (Minus (5)): Minus C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprop2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\bioprot1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Bio_BeneRaw2\par
+\cf2 Start Time: Fri Jun 15 15:50:33 2012\par
+Succeeded at Fri Jun 15 15:50:34 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Con (2)): Con C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Bio_BeneRaw2 0 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Bio_Benefit2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Bio_BeneRaw2 "VALUE < 0"\par
+\cf2 Start Time: Fri Jun 15 15:50:34 2012\par
+Succeeded at Fri Jun 15 15:50:36 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 15:50:37 2012 (Elapsed Time: 22.00 seconds)\par
+\cf1 Executing (6082 bio beni divided by cost): Model2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\cons_value1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\cons_value2 2 2\par
+\cf2 Start Time: Fri Jun 15 15:50:37 2012\par
+\pard\li450\cf1 Executing (Divide (2)): Divide C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\biodiv_value C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\cost_mngmt2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\BioValCst2\par
+\cf2 Start Time: Fri Jun 15 15:50:38 2012\par
+Succeeded at Fri Jun 15 15:50:41 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Times (2)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\P23a\par
+\cf2 Start Time: Fri Jun 15 15:50:41 2012\par
+Succeeded at Fri Jun 15 15:50:41 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra): SingleOutputMapAlgebra "con (cost_mngmt1 > 0, pow (bio_benefit1,P23a) div (cost_mngmt1), 0)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\cons_value1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\cost_mngmt1;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\bio_benefit1;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\P23a\par
+\cf2 Start Time: Fri Jun 15 15:50:41 2012\par
+Succeeded at Fri Jun 15 15:50:44 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Divide (6)): Divide C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\biodiv_value C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\cost_mngmt1 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\BioValCst1\par
+\cf2 Start Time: Fri Jun 15 15:50:44 2012\par
+Succeeded at Fri Jun 15 15:50:47 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Times (4)): Times C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\region_is_1 2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\P23b\par
+\cf2 Start Time: Fri Jun 15 15:50:47 2012\par
+Succeeded at Fri Jun 15 15:50:48 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (5)): SingleOutputMapAlgebra "con (cost_mngmt2 > 0, pow (bio_benefit2,P23b) div (cost_mngmt2), 0)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\cons_value2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\P23b;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\bio_benefit2;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\cost_mngmt2\par
+\cf2 Start Time: Fri Jun 15 15:50:48 2012\par
+Succeeded at Fri Jun 15 15:50:52 2012 (Elapsed Time: 4.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (6)): SingleOutputMapAlgebra "con (cost_mngmt3 > 0, (bio_benefit3) div (cost_mngmt3), 0)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\cons_value3 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\bio_benefit3;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\cost_mngmt3\par
+\cf2 Start Time: Fri Jun 15 15:50:52 2012\par
+Succeeded at Fri Jun 15 15:50:55 2012 (Elapsed Time: 3.00 seconds)\par
+\cf1 Executing (Single Output Map Algebra (7)): SingleOutputMapAlgebra "con (cost_mngmt4 > 0, (bio_benefit4) div (cost_mngmt4), 0)" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\cons_value4 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\bio_benefit4;C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\inputs\\cost_mngmt4\par
+\cf2 Start Time: Fri Jun 15 15:50:55 2012\par
+Succeeded at Fri Jun 15 15:50:57 2012 (Elapsed Time: 2.00 seconds)\par
+\pard\li300 Succeeded at Fri Jun 15 15:50:57 2012 (Elapsed Time: 20.00 seconds)\par
+\cf1 Executing (scripttomakesummaryshapefile): scripttomakesummaryshapefile 0\par
+\cf2 Start Time: Fri Jun 15 15:50:57 2012\par
+Running script scripttomakesummaryshapefile...\par
+This is the first iteration\par
+OutputMessage\par
+Completed script scripttomakesummaryshapefile...\par
+Succeeded at Fri Jun 15 15:52:53 2012 (Elapsed Time: 1 minutes 56 seconds)\par
+\cf1 Executing (8012-identify-best-site-and-change-sites-populated-table-and-update-total-spent): 8012-identify-best-site-and-change-sites-populated-table-and-update-total-spent 3 "0 + 1" C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\ZonalSt_sites_13 25 2\par
+\cf2 Start Time: Fri Jun 15 15:52:53 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE;ConsVal_A1 ConsVal_A1 VISIBLE NONE;ConsVal_A2 ConsVal_A2 VISIBLE NONE;SequenceA1 SequenceA1 VISIBLE NONE;SequenceA2 SequenceA2 VISIBLE NONE;BioValCst1 BioValCst1 VISIBLE NONE;BioValCst2 BioValCst2 VISIBLE NONE;BioBeni_A1 BioBeni_A1 VISIBLE NONE;BioBeni_A2 BioBeni_A2 VISIBLE NONE;Cost_A1 Cost_A1 VISIBLE NONE;Cost_A2 Cost_A2 VISIBLE NONE;Biod_Value Biod_Value VISIBLE NONE;sptl_cntxt sptl_cntxt VISIBLE NONE;contiguity contiguity VISIBLE NONE;connectvty connectvty VISIBLE NONE;compositn compositn VISIBLE NONE;Representn Representn VISIBLE NONE;Naturalnss Naturalnss VISIBLE NONE;hab_rprsnt hab_rprsnt VISIBLE NONE;regnl_hab regnl_hab VISIBLE NONE;nationlhab nationlhab VISIBLE NONE;speciesrep speciesrep VISIBLE NONE;Biome_Rep Biome_Rep VISIBLE NONE;B_Hab_Rep B_Hab_Rep VISIBLE NONE;Varnt_Rep Varnt_Rep VISIBLE NONE;TotalSpent TotalSpent VISIBLE NONE;OneToMany OneToMany VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:52:54 2012\par
+Succeeded at Fri Jun 15 15:52:54 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Resample): Resample C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\cons_value2 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cons_vx_rsmp 25 NEAREST\par
+\cf2 Start Time: Fri Jun 15 15:52:54 2012\par
+Succeeded at Fri Jun 15 15:53:13 2012 (Elapsed Time: 19.00 seconds)\par
+\cf1 Executing (Zonal Statistics as Table): ZonalStatisticsAsTable C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\sites_16th VALUE C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\cons_vx_rsmp C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\ZonalSt_sites_13 DATA ALL\par
+\cf2 Start Time: Fri Jun 15 15:53:13 2012\par
+Succeeded at Fri Jun 15 15:53:17 2012 (Elapsed Time: 4.00 seconds)\par
+\cf1 Executing (Add Field (2)): AddField C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\ZonalSt_sites_13 Mean_Long LONG # # # # NON_NULLABLE NON_REQUIRED #\par
+\cf2 Start Time: Fri Jun 15 15:53:17 2012\par
+Adding Mean_Long to C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\ZonalSt_sites_13...\par
+Succeeded at Fri Jun 15 15:53:18 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Calculate Field (2)): CalculateField C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\ZonalSt_sites_13 Mean_Long "[MEAN] *1000000000" VB #\par
+\cf2 Start Time: Fri Jun 15 15:53:18 2012\par
+Succeeded at Fri Jun 15 15:53:18 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Make Table View): MakeTableView C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\ZonalSt_sites_13 ZonalSt_sites_13_View # # "Rowid Rowid VISIBLE NONE;VALUE VALUE VISIBLE NONE;COUNT COUNT VISIBLE NONE;AREA AREA VISIBLE NONE;MIN MIN VISIBLE NONE;MAX MAX VISIBLE NONE;RANGE RANGE VISIBLE NONE;MEAN MEAN VISIBLE NONE;STD STD VISIBLE NONE;SUM SUM VISIBLE NONE;MEAN_LONG MEAN_LONG VISIBLE NONE;MAX_MEAN_L MAX_MEAN_L VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:18 2012\par
+Succeeded at Fri Jun 15 15:53:18 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Summary Statistics): Statistics C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\ZonalSt_sites_13 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Max_Mean.dbf "Mean_Long MAX" #\par
+\cf2 Start Time: Fri Jun 15 15:53:18 2012\par
+Succeeded at Fri Jun 15 15:53:18 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Join Field): JoinField ZonalSt_sites_13_View Mean_Long C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\Max_Mean.dbf MAX_Mean_L MAX_Mean_L\par
+\cf2 Start Time: Fri Jun 15 15:53:18 2012\par
+Succeeded at Fri Jun 15 15:53:19 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (Add Join (2)): AddJoin Sites_Populated_Layer Site_ID ZonalSt_sites_13_View VALUE KEEP_ALL\par
+\cf2 Start Time: Fri Jun 15 15:53:19 2012\par
+Succeeded at Fri Jun 15 15:53:19 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (Select Layer By Attribute (2)): SelectLayerByAttribute Sites_Populated_Layer NEW_SELECTION ""zonalst_sites_11:MAX_MEAN_L" > 0"\par
+\cf2 Start Time: Fri Jun 15 15:53:19 2012\par
+\cf3 ERROR \cf4 000358\cf3 : Invalid expression\par
+Failed to execute (Select Layer By Attribute (2)).\par
+\cf2 Failed at Fri Jun 15 15:53:19 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (8012-identify-best-site-and-change-sites-populated-table-and-update-total-spent).\par
+\cf2 Failed at Fri Jun 15 15:53:19 2012 (Elapsed Time: 26.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:19 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:20 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:20 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:20 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:20 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:20 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:20 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:21 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:21 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:21 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:21 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:21 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:21 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:22 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:22 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:22 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:22 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:22 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:23 2012 (Elapsed Time: 1.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:23 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:23 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:23 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:23 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:23 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:23 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:24 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:24 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:24 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:24 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:24 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:25 2012 (Elapsed Time: 1.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:25 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:25 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:25 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:25 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:25 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:25 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:26 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:26 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:26 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:26 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:26 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:26 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:26 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:26 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:27 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:27 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:27 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:27 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:28 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:28 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:28 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:28 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:28 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:28 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:28 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:28 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:29 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:29 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:29 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:29 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:29 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:29 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:29 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:29 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:30 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:30 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:30 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:30 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:30 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:31 2012 (Elapsed Time: 1.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:31 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:31 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:31 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:31 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:31 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:31 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:32 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:32 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:32 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:32 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:32 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:32 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:32 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:32 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:33 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:33 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:33 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:33 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:33 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:33 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:33 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:33 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:34 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:34 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:34 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:34 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:35 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:35 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:35 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:35 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:35 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:35 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:35 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:35 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:36 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:36 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:36 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:36 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:36 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:36 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:36 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:36 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:37 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:37 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:37 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:37 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:38 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:38 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:38 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:38 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:38 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:38 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:38 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:38 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:39 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:39 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:39 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:39 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:39 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:39 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:39 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:39 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:40 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:40 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:40 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:40 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:40 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:41 2012 (Elapsed Time: 1.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:41 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:41 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:41 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:41 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:41 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:41 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:42 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:42 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:42 2012 (Elapsed Time: 1.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:42 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:42 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:42 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:42 2012 (Elapsed Time: 0.00 seconds)\par
+\cf1 Executing (4000-Make-mngmt-quality-raster): 4000-Make-mngmt-quality-raster 1 0.74 .15 C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\scratch\\mngmt_quality\par
+\cf2 Start Time: Fri Jun 15 15:53:42 2012\par
+\pard\li450\cf1 Executing (Make Feature Layer): MakeFeatureLayer C:\\Workspace\\LandscapeDSS\\LandAdvisor_LittleKaroo_v3_0_beta_Research_Paramaters\\outputs\\Sites_Populated.shp Sites_Populated_Layer # # "FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;Genrl_Type Genrl_Type VISIBLE NONE;Site_ID Site_ID VISIBLE NONE;Site_Notes Site_Notes VISIBLE NONE;NickName NickName VISIBLE NONE;Site_HA Site_HA VISIBLE NONE;mngmt_qlty mngmt_qlty VISIBLE NONE"\par
+\cf2 Start Time: Fri Jun 15 15:53:43 2012\par
+\cf3 Failed to execute (Make Feature Layer).\par
+\cf2 Failed at Fri Jun 15 15:53:43 2012 (Elapsed Time: 0.00 seconds)\par
+\pard\li300\cf3 Failed to execute (4000-Make-mngmt-quality-raster).\par
+\cf2 Failed at Fri Jun 15 15:53:43 2012 (Elapsed Time: 1.00 seconds)\par
+\pard\li150\cf3 Failed to execute (4.FullModel).\par
+\cf2 Failed at Fri Jun 15 15:53:43 2012 (Elapsed Time: 1 hours 6 minutes 22 seconds)\par
+\cf0\par
+\pard\f1\par
+}
+ 
